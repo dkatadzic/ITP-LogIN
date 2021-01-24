@@ -1,0 +1,7 @@
+{
+  "realm": "LogIN-Test",
+  "auth-server-url": "http://192.168.92.132:8080/auth/",
+  "ssl-required": "none",
+  "resource": "JavascriptDemo",
+  "public-client": true
+}
