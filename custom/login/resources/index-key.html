@@ -1,0 +1,40 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/signin.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, minimum-scale=1, maximum-scale=1"/>
+  <link rel="icon" href="img/favicon.ico">
+  <title>TGM LogIN</title>
+</head>
+<body class="bgbody"style="height:100%">
+  <!--  Hintergrund -->
+  <img class="background" src="img/parallax2.jpg" alt="Wien" width="100%" height="100%">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar sticky-top navbar-dark bg-dark ">
+    <div class="ml-auto" style="height:50pt">
+    <a class="navbar-brand" href="#"><img src="img/Logo.png" style="height:100%;width:auto" alt="LogIN Logo"></a>
+    </div>
+  </nav>
+  <!-- Login Form -->
+  <div id="login" style="width:40%; height:40%; top:30%;margin:auto; overflow:auto; margin-top:5%; background: rgba(255, 255, 255, 0.5); border: 2px solid black; color: black;border-radius: 0;">
+    	<img src="img/TGMLNB.png" height="10%" width:"20%" style="margin-bottom: 20px;margin-top:20px" class="rounded mx-auto d-block" alt="...">
+  <form style="padding-left:10%;padding-right:10%;" id="kc-form-login" onsubmit="login.disabled = true; return true;" action="http://192.168.68.136:8080/auth/realms/LogIN-Test/login-actions/authenticate?session_code=7J4uY958irQJp0v-NaFnuNCPXP2UYEtrVKmb9UO4DUc&amp;execution=db8affcc-d990-48ba-a6a8-d722f8de3c9c&amp;client_id=account&amp;tab_id=QM_XwAfIzbg" method="post">
+  <div class="form-group text-center" style="margin-top:10%">
+  <label for="username" class="sr-only">Benutzername</label>
+  <input type="text" id="username" name="username" class="form-control" autocomplete="off" placeholder="Benutzername" required="" autofocus="">
+  <label for="password" class="sr-only">Passwort</label>
+  <input type="password" id="password" class="form-control" placeholder="Passwort" required="" name="password">
+    </div>
+    <div  id="kc-form-buttons" class="d-flex justify-content-center">
+      <!--<input tabindex="4" class=" " name="login" id="kc-login" type="submit" value="Einloggen"/>-->
+      <button type="submit" name="login" id="kc-login" tabindex="4" class="btn btn-primary text-center">Einloggen</button>
+    </div>
+  </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script type="text/javascript" href="/js/bootstrap.min.js"></script>
+</body>
+</html>
